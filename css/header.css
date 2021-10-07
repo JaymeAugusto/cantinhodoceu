@@ -1,0 +1,44 @@
+header{
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header a{
+    opacity: 0.8;
+}
+
+header a:hover{
+    opacity: 1;
+}
+
+header img{
+    width: 300px;
+}
+
+header nav{
+    display: flex;
+}
+
+header li a{
+    font-size: 1.2rem;
+    color: rgb(34, 34, 255);
+}
+
+header li{
+    margin: 0 15px;
+}
+
+header li:first-child{
+    margin-left: 0;
+}
+
+header li:last-child{
+    margin-right: 0;
+}
