@@ -42,3 +42,34 @@ header li:first-child{
 header li:last-child{
     margin-right: 0;
 }
+
+@media (max-width: 800px) {
+    header{
+        flex-direction: column;
+    }
+
+    header img{
+        width: 90vw;
+    }
+
+    header li{
+        margin: 0 2vw;
+        
+    }
+}
+
+@media (max-width: 500px){
+    header nav{
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    header li{
+        margin: 0 2vw;
+    }
+
+    header li a{
+        font-size: 1rem;
+        color: rgb(34, 34, 255);
+    }
+}

@@ -1,5 +1,5 @@
 .impact{
-    background-image: url(../images/carousel.jpg);
+    background-image: url(../images/imageLarge.jpg);
     background-size: cover;
     min-height: 100vh;
     color: #fff;
@@ -25,4 +25,10 @@
     border-radius: 7px;
     color: rgb(34, 34, 255);
     padding: 10px 20px;
+}
+
+@media (max-width: 800px) {
+    .impact{
+        background-image: url(../images/imageSmall.jpeg);
+    }
 }
