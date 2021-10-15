@@ -8,6 +8,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
+    padding-bottom: 5px;
 }
 
 header a{
