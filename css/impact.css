@@ -12,10 +12,12 @@
 
 .impact h1{
     font-size: 3rem;
+    text-shadow: rgb(0, 70, 0) 4px 4px 2px
 }
 
 .impact h3{
     font-size: 2rem;
+    text-shadow: rgb(0, 70, 0) 2px 2px 4px
 }
 
 .impact .btn{
@@ -23,12 +25,22 @@
     font-size: 1.3rem;
     margin-top: 1%;
     border-radius: 7px;
-    color: rgb(34, 34, 255);
+    color: rgb(0, 70, 0);
     padding: 10px 20px;
 }
 
 @media (max-width: 800px) {
     .impact{
         background-image: url(../images/imageSmall.jpeg);
+    }
+
+    .impact h1{
+        font-size: 2.3rem;
+        text-shadow: rgb(0, 70, 0) 4px 4px 2px
+    }
+    
+    .impact h3{
+        font-size: 1.3rem;
+        text-shadow: rgb(0, 70, 0) 2px 2px 4px
     }
 }
