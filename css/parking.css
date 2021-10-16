@@ -41,21 +41,17 @@
 
 .parking .grid li i{
     color: rgb(195, 200, 60);
-    font-size: 3em;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
 .parking .grid li h4{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: rgb(195, 200, 60);
     margin-bottom: 10px;
 }
 
 @media (max-width: 850px){
-    .parking h3{
-        font-size: 1.5rem;
-    }
-
     .parking .grid{
         width: 100%;
         flex-direction: column;

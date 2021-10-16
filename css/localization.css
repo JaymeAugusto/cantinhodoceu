@@ -1,0 +1,32 @@
+.localization{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 50px;
+}
+
+.localization h3{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:rgb(0, 60, 0);
+    text-align: center;
+}
+
+.localization i{
+    color: rgb(0, 60, 0);
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.localization iframe{
+    border: 5px dashed rgb(0, 60, 0);
+    width: 80vw;
+    height: 50vh;
+}
+
+@media (max-width: 850px){
+    .localization iframe{
+        width: 90vw;
+        height: 50vh;
+    }
+}
