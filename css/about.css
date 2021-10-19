@@ -19,6 +19,14 @@
     text-align: center;
 }
 
+.about p.sobre{
+    max-width: 800px;
+    margin-bottom: 10px;
+    color: rgb(0, 30, 0);
+    text-align: justify;
+    text-indent: 30px;
+}
+
 .about .btn{
     background-color: rgba(0, 70, 0, 0.5);
     font-size: 0.9rem;
