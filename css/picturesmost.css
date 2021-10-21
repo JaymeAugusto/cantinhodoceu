@@ -1,10 +1,29 @@
+.pictures{
+    width: 80vw;
+    margin: 100px auto;
+}
+
+.pictures h1{
+    font-size: 1.5rem;
+    color: rgb(0, 60, 0);
+    margin-top: 50px;
+}
 
 .pictures ul{
-    width: 80vw;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin: 100px auto;
+    align-items: center;
+}
+
+.pictures ul div.mostpic{
+    visibility: hidden;
+    display: none;
+}
+
+.pictures ul div.mostpictrue{
+    visibility: visible;
+    display: contents;
 }
 
 img.min{
@@ -12,98 +31,33 @@ img.min{
     padding: 10px;
 }
 
-div.lbox{
-    visibility: hidden;
-    opacity: 0;
-    position: fixed;
+.pictures i.viewmore{
+    font-size: 2rem;
+    color: rgb(0, 60, 0);
+    margin: 0px 47%;
 }
 
-div.lbox:target{
-    opacity: 1;
+.pictures i.viewtrue{
     visibility: visible;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
-    background-color: rgba(10, 10, 10, 0.7);
-    position: fixed;
+    display: block;
 }
 
-div.box_img{
-    width: 100vw;
-    height: 100vh;
-}
-
-div.box_img img{
-    width: 60vw;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-}
-
-div.lbox:target div.box_img img{
-    opacity: 1;
-    transition: opacity 0.5s linear;
-}
-
-div.box_img a.btn{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
-    text-align: center;
-}
-
-#prev{
-    left: 5%;
-    top:45%
-}
-
-#next{
-    right: 5%;
-    top:45%
-}
-
-#close{
-    top: 3%;
-    right: 3%;
+.pictures i.viewfalse{
+    visibility: hidden;
+    display: none;
 }
 
 @media (max-width: 500px){
+    .pictures{
+        width: 80vw;
+        margin: 70px auto;
+    }
+
     .pictures ul{
         justify-content: space-around
     }
 
     img.min{
         width: 95vw;
-    }
-    
-    div.box_img img{
-        width: 97vw;
-        position: relative;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-    }
-    
-    #prev{
-        left: 5%;
-        top: 75%
-    }
-    
-    #next{
-        right: 5%;
-        top:75%
-    }
-    
-    #close{
-        top: 10%;
-        right: 3%;
     }
 }
