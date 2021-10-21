@@ -1,12 +1,14 @@
+
 .pictures ul{
-    width: 880px;
+    width: 80vw;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin: 100px auto;
 }
 
 img.min{
-    width: 200px;
+    width: 40vw;
     padding: 10px;
 }
 
@@ -28,11 +30,16 @@ div.lbox:target{
 }
 
 div.box_img{
-    width: 1000px;
-    margin: 50px auto;
+    width: 100vw;
+    height: 100vh;
 }
 
 div.box_img img{
+    width: 60vw;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
 }
 
@@ -63,6 +70,40 @@ div.box_img a.btn{
 }
 
 #close{
-    top: 0;
-    right: 2%;
+    top: 3%;
+    right: 3%;
+}
+
+@media (max-width: 500px){
+    .pictures ul{
+        justify-content: space-around
+    }
+
+    img.min{
+        width: 95vw;
+    }
+    
+    div.box_img img{
+        width: 97vw;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    
+    #prev{
+        left: 5%;
+        top: 75%
+    }
+    
+    #next{
+        right: 5%;
+        top:75%
+    }
+    
+    #close{
+        top: 10%;
+        right: 3%;
+    }
 }

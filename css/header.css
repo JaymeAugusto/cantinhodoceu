@@ -63,6 +63,10 @@ header li:last-child{
         padding: 5px 20px 10px 20px;
     }
 
+    header a{
+        opacity: 1;
+    }
+
     header img{
         width: 90vw;
     }
@@ -98,7 +102,7 @@ header li:last-child{
         color: #fff;
         float: right;
         cursor: pointer;
-        margin: 7px 22px;
+        margin: 10px 22px;
     }
 
     header nav.menu{
